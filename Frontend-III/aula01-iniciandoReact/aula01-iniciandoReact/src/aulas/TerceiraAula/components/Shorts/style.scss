@@ -1,0 +1,47 @@
+.container_shorts {
+
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+
+  h2 {
+
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+
+  .shorts {
+
+    display: flex;
+    gap: 16px;
+    margin: 16px 0;
+
+    li {
+
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      gap: 8px;
+      background: #212121;
+
+      h2 {
+
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.2rem;
+
+      }
+
+      span {
+
+        font-size: 14px;
+        font-weight: 400;
+        color: #8F8F8F;
+        margin-bottom: 32px;
+
+      }
+    }
+  }
+}

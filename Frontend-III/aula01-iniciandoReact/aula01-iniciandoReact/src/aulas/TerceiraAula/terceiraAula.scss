@@ -1,0 +1,28 @@
+.header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 1px #202124;
+  padding-bottom: 16px;
+
+  h1 {
+
+    color: black;
+    font-size: 24px;
+
+  }
+
+  .logo {
+
+    display: flex;
+    align-items:  center;
+    gap: 8px;
+
+    h2 {
+
+      font-size: 18px;
+
+    }
+  }
+}
