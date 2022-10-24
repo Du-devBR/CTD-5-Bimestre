@@ -7,13 +7,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 32px 0;
-  border-bottom: solid 1px #202124;
+  border-bottom: solid 1px #ffffff;
   padding-bottom: 16px;
 }
 
 .container_aula_3 h2 {
   font-size: 18px;
   font-weight: bold;
+  color: #fff;
 }
 
 .container_aula_3 .card {
@@ -33,7 +34,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  background: #212121;
 }
 
 .container_aula_3 .card li .channel {

@@ -2,6 +2,7 @@ import { Card } from "./components/Card"
 import { YoutubeLogo } from 'phosphor-react'
 import './terceiraAula.scss'
 import { Shorts } from "./components/Shorts"
+import { ButtonSelector } from "./components/Bottons"
 
 export function TerceiraAula(){
   return (
@@ -13,6 +14,7 @@ export function TerceiraAula(){
           <YoutubeLogo size={32} color="#c4302b"/>
         </div>
       </div>
+      <ButtonSelector />
       <Card />
       <Shorts />
     </>

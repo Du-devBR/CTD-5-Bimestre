@@ -12,6 +12,7 @@
 .container_shorts h2 {
   font-size: 18px;
   font-weight: bold;
+  color: #fff;
 }
 
 .container_shorts .shorts {
@@ -32,7 +33,6 @@
           flex-direction: column;
   overflow: hidden;
   gap: 8px;
-  background: #212121;
 }
 
 .container_shorts .shorts li h2 {
