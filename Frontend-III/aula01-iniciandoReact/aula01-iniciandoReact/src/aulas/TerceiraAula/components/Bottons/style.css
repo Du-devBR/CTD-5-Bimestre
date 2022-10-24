@@ -6,4 +6,12 @@
   background-color: #4C4C4C;
   color: #fff;
   font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.btn-selector:hover {
+  background-color: #6d6d6d;
+  border: solid 1px #d6d6d6;
 }
