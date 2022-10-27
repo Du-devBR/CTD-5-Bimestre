@@ -1,0 +1,76 @@
+.quinta-aula-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 32px 0;
+  border-bottom: solid 1px #ffffff;
+  padding-bottom: 16px;
+}
+
+.quinta-aula-component h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.quinta-aula-component .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.quinta-aula-component .card li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.quinta-aula-component .card li .channel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  width: 90%;
+  margin: 12px 0;
+}
+
+.quinta-aula-component .card li .channel img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
+
+.quinta-aula-component .card li .channel .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.quinta-aula-component .card li .channel .content h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.2rem;
+}
+
+.quinta-aula-component .card li .channel .content span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #8F8F8F;
+}

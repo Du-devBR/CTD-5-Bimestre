@@ -1,0 +1,72 @@
+.quinta-aula-component {
+
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+  border-bottom: solid 1px #ffffff;
+  padding-bottom: 16px;
+
+  h2 {
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+
+  }
+
+  .card{
+
+    display: flex;
+    gap: 8px;
+    margin: 16px 0;
+
+    li {
+
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      .channel {
+
+        display: flex;
+        gap: 16px;
+        width: 90%;
+        margin: 12px 0;
+
+
+        img {
+
+          width: 36px;
+          height: 36px;
+          border-radius: 100%;
+
+        }
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          h2 {
+
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 1.2rem;
+
+          }
+
+          span {
+
+            font-size: 12px;
+            font-weight: 400;
+            color: #8F8F8F;
+
+          }
+
+        }
+      }
+    }
+
+  }
+}
