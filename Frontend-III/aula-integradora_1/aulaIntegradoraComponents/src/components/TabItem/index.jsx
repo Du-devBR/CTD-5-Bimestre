@@ -3,7 +3,7 @@ import windows from './../../assets/logoWindows.png'
 
 import './style.scss'
 
-export function CardNewGame(props){
+export function TabItem(props){
 
   return(
 

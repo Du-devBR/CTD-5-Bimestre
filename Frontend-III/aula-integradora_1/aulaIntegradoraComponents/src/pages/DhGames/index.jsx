@@ -1,4 +1,4 @@
-import { CardNewGame } from '../../components/CardNewGame'
+import { TabItem } from '../../components/TabItem'
 import './style.scss'
 
 export function DhGames(){
@@ -116,7 +116,17 @@ const cheapGames = [
         <ul className="container_newGames">
             {
                 newGames.map(component =>(
-                    <CardNewGame
+                    <TabItem
+                        data = {component}
+                    />
+                ))
+            }
+        </ul>
+
+        <ul className="container_earlyGames">
+            {
+                earlyAccessGames.map(component => (
+                    <TabItem
                         data = {component}
                     />
                 ))
