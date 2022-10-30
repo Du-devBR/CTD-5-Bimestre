@@ -6,6 +6,8 @@
   height: 167px;
   background-color: #151515;
   border-radius: 12px;
+  cursor: pointer;
+  transition: 0.6s;
 
   img {
 
@@ -64,6 +66,11 @@
       opacity: 80%;
 
     }
-
   }
+
+}
+
+.container_tabItem:hover {
+
+  background-color: #ff7b002d;
 }
