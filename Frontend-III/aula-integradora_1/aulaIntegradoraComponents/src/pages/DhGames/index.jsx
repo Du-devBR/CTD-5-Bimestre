@@ -1,3 +1,4 @@
+import { CardItem } from '../../components/CardItem'
 import { TabItem } from '../../components/TabItem'
 import './style.scss'
 
@@ -122,6 +123,16 @@ const cheapGames = [
                 ))
             }
         </ul>
+
+        <div className="containerOffers">
+            {
+                halloweenGames.map(component => [
+                    <CardItem
+                        data = {component}
+                    />
+                ])
+            }
+        </div>
 
         <ul className="container_earlyGames">
             {

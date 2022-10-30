@@ -6,12 +6,9 @@ import './style.scss'
 export function TabItem(props){
 
   return(
-
-   <ul>
-     {
-        <li className="container_card">
+        <li className="container_tabItem">
           <img src={props.data.picture} alt="" />
-          <div className="infoCard">
+          <div className="infoTabItem">
             <div className="content">
               <h2>{props.data.name}</h2>
               <ul className="list_gamingPlatforms">
@@ -19,10 +16,8 @@ export function TabItem(props){
               </ul>
               <p className="list_categories">{props.data.categories.join(", ")}</p>
             </div>
-            <p className='price'>{props.data.price}</p>
+            <span className='price'>{props.data.price}</span>
           </div>
         </li>
-     }
-   </ul>
   )
 }
