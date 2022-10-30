@@ -1,18 +1,28 @@
 body {
 
-  background-color: #202020;
+  background-color: #101010;
 
   .newGames,.earlyAccessGames {
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #101010;
+
+    .title_section{
+
+      color: rgba(255, 255, 255, 0.815);
+      font-size: 36px;
+      text-align: end;
+      font-weight: 700;
+      margin: 84px 0 24px 0;
+
+    }
 
     .container_newGames, .container_earlyGames {
 
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       gap: 12px;
       width: 1146px;
 
@@ -24,17 +34,33 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #101010;
 
-    .container_offers, .container_cheapGames {
+    .container_section_cheapGames, .container_section_offers {
 
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-      gap: 24px;
-      width: 1146px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .title_section{
+
+        color: rgba(255, 255, 255, 0.815);
+        font-size: 36px;
+        text-align: end;
+        font-weight: 700;
+        margin: 84px 0 24px 0;
+
+      }
+
+      .container_offers, .container_cheapGames {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+        gap: 24px;
+        width: 1146px;
+
+      }
 
     }
-
   }
 
 

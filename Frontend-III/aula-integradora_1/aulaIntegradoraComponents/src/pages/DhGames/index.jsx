@@ -117,16 +117,17 @@ const cheapGames = [
   return(
     <>
 
-        <header>
+        <header className='header'>
             <Header />
         </header>
 
-        <section>
+        <section className='container_banner'>
             <Banner />
         </section>
 
         <section className='newGames'>
             <ul className="container_newGames">
+                <h2 className='title_section'>New Games</h2>
                 {
                     newGames.map(component =>(
                         <TabItem
@@ -138,19 +139,23 @@ const cheapGames = [
         </section>
 
         <section className='halloweenOffers'>
-            <div className="container_offers">
-                {
-                    halloweenGames.map(component => [
-                        <CardItem
-                            data = {component}
-                        />
-                    ])
-                }
+            <div className='container_section_offers'>
+                <h2 className='title_section'>New Games</h2>
+                <div className="container_offers">
+                    {
+                        halloweenGames.map(component => [
+                            <CardItem
+                                data = {component}
+                            />
+                        ])
+                    }
+                </div>
             </div>
         </section>
 
         <section className='earlyAccessGames'>
             <ul className="container_earlyGames">
+                <h2 className='title_section'>New Games</h2>
                 {
                     earlyAccessGames.map(component => (
                         <TabItem
@@ -162,15 +167,19 @@ const cheapGames = [
         </section>
 
         <section className='cheapGames'>
-            <ul className="container_cheapGames">
-                {
-                    cheapGames.map(component => (
-                        <CardItem
-                            data = {component}
-                        />
-                    ))
-                }
-            </ul>
+            <div className='container_section_cheapGames'>
+                <h2 className='title_section'>New Games</h2>
+                <ul className="container_cheapGames">
+
+                    {
+                        cheapGames.map(component => (
+                            <CardItem
+                                data = {component}
+                            />
+                        ))
+                    }
+                </ul>
+            </div>
         </section>
     </>
   )
