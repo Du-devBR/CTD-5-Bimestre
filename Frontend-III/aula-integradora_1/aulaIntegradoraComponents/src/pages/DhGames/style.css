@@ -1,0 +1,35 @@
+body {
+  background-color: #202020;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container_newGames, body .container_earlyGames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  background-color: #101010;
+}
+
+body .container_offers, body .container_cheapGames {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  gap: 24px;
+  width: 1146px;
+  background-color: #101010;
+}

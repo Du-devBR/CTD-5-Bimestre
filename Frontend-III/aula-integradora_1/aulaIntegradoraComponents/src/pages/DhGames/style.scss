@@ -1,16 +1,26 @@
-.container_newGames, .container_earlyGames {
+body {
 
+  background-color: #202020;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: center;
   
-}
+  .container_newGames, .container_earlyGames {
 
-.container_offers, .container_cheapGames {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #101010;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  gap: 24px;
-  max-width: 1146px;
+  }
 
+  .container_offers, .container_cheapGames {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 24px;
+    width: 1146px;
+    background-color: #101010;
+
+  }
 }

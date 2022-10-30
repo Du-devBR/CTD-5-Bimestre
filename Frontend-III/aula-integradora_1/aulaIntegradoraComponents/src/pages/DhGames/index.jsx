@@ -1,4 +1,5 @@
 import { CardItem } from '../../components/CardItem'
+import { Header } from '../../components/Header'
 import { TabItem } from '../../components/TabItem'
 import './style.scss'
 
@@ -114,6 +115,9 @@ const cheapGames = [
 ]
   return(
     <>
+
+        <Header />
+
         <ul className="container_newGames">
             {
                 newGames.map(component =>(
