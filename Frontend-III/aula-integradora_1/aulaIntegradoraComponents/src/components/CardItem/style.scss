@@ -1,10 +1,3 @@
-.containerOffers {
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-  gap: 24px;
-  max-width: 1146px;
-
   .container_card {
 
     display: flex;
@@ -75,4 +68,4 @@
     }
   }
 
-}
+

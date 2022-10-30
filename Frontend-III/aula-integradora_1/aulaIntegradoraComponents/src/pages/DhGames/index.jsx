@@ -124,7 +124,7 @@ const cheapGames = [
             }
         </ul>
 
-        <div className="containerOffers">
+        <div className="container_offers">
             {
                 halloweenGames.map(component => [
                     <CardItem
@@ -138,6 +138,16 @@ const cheapGames = [
             {
                 earlyAccessGames.map(component => (
                     <TabItem
+                        data = {component}
+                    />
+                ))
+            }
+        </ul>
+
+        <ul className="container_cheapGames">
+            {
+                cheapGames.map(component => (
+                    <CardItem
                         data = {component}
                     />
                 ))

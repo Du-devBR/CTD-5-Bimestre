@@ -1,14 +1,16 @@
-.container_newGames {
-
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.container_earlyGames {
+.container_newGames, .container_earlyGames {
 
   display: flex;
   flex-direction: column;
   gap: 12px;
   
+}
+
+.container_offers, .container_cheapGames {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  gap: 24px;
+  max-width: 1146px;
+
 }
