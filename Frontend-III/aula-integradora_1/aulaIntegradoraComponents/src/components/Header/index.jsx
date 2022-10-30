@@ -1,10 +1,11 @@
 import './style.scss'
+import logo from './../../assets/logo_game.png'
 
 export function Header(){
   return(
     <>
       <div className="container_header">
-       <h1>Dh Hames</h1>
+       <img src={logo} alt="" />
         <nav className='menu_nav'>
           <ul className='list_nav'>
             <li>Store</li>

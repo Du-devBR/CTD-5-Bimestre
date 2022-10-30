@@ -1,3 +1,4 @@
+import { Banner } from '../../components/Banner'
 import { CardItem } from '../../components/CardItem'
 import { Header } from '../../components/Header'
 import { TabItem } from '../../components/TabItem'
@@ -119,6 +120,10 @@ const cheapGames = [
         <header>
             <Header />
         </header>
+
+        <section>
+            <Banner />
+        </section>
 
         <section className='newGames'>
             <ul className="container_newGames">
