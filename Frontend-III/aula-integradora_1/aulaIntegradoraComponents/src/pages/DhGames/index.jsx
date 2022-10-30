@@ -116,47 +116,57 @@ const cheapGames = [
   return(
     <>
 
-        <Header />
+        <header>
+            <Header />
+        </header>
 
-        <ul className="container_newGames">
-            {
-                newGames.map(component =>(
-                    <TabItem
-                        data = {component}
-                    />
-                ))
-            }
-        </ul>
+        <section className='newGames'>
+            <ul className="container_newGames">
+                {
+                    newGames.map(component =>(
+                        <TabItem
+                            data = {component}
+                        />
+                    ))
+                }
+            </ul>
+        </section>
 
-        <div className="container_offers">
-            {
-                halloweenGames.map(component => [
-                    <CardItem
-                        data = {component}
-                    />
-                ])
-            }
-        </div>
+        <section className='halloweenOffers'>
+            <div className="container_offers">
+                {
+                    halloweenGames.map(component => [
+                        <CardItem
+                            data = {component}
+                        />
+                    ])
+                }
+            </div>
+        </section>
 
-        <ul className="container_earlyGames">
-            {
-                earlyAccessGames.map(component => (
-                    <TabItem
-                        data = {component}
-                    />
-                ))
-            }
-        </ul>
+        <section className='earlyAccessGames'>
+            <ul className="container_earlyGames">
+                {
+                    earlyAccessGames.map(component => (
+                        <TabItem
+                            data = {component}
+                        />
+                    ))
+                }
+            </ul>
+        </section>
 
-        <ul className="container_cheapGames">
-            {
-                cheapGames.map(component => (
-                    <CardItem
-                        data = {component}
-                    />
-                ))
-            }
-        </ul>
+        <section className='cheapGames'>
+            <ul className="container_cheapGames">
+                {
+                    cheapGames.map(component => (
+                        <CardItem
+                            data = {component}
+                        />
+                    ))
+                }
+            </ul>
+        </section>
     </>
   )
 }
