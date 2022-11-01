@@ -3,12 +3,13 @@
 // import { TerceiraAula } from "./aulas/TerceiraAula/TerceiraAula"
 import { QuartaAula } from "./aulas/QuartaAula"
 import { QuintaAula } from "./aulas/QuintaAula"
+import { SetimaAula } from "./aulas/SetimaAula"
 
 export function App() {
 
   return (
     <>
-      <QuintaAula />
+      <SetimaAula />
     </>
   )
 }
