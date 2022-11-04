@@ -27,6 +27,29 @@ export function SetimaAula(){
   //     </main>
   // )
 
+
+  const [nomeProduto, setNomeProduto] = useState('')
+  const [precoProduto, setPrecoProduto] = useState('')
+  const [fotoProduto, setFotoProduto] = useState('')
+
+  function cadastrarProduto(event){   //passado event como parametro
+    event.preventDefault()   //preventDefault para não recarregar ao realizar onclick
+
+    //criar objeto com dados obtidos dos inputs
+    const novoProdutoCadastrado = {
+        name: nomeProduto,
+        price: precoProduto,
+        picture: fotoProduto
+
+    }
+    setAllProducts([...allProducts, novoProdutoCadastrado]) // coletando os dados do input e adionando no array allproducts
+
+    //os valores de set abaixo, representa que todas vez que adionar no botão os campo são limpos
+    setNomeProduto('')
+    setPrecoProduto('')
+    setFotoProduto('')
+  }
+
   const [allProducts, setAllProducts] = useState(
 
     [
@@ -62,7 +85,6 @@ const newProduct = {
 
 function adicionarCard(){
 
-  allProducts.push(newProduct)
   setAllProducts([...allProducts, newProduct])  //utilizando "(...)" spread Opearator para pegar o valor do conteudo array antigo e adionar um novo array.
 
 }
@@ -75,6 +97,23 @@ function adicionarCard(){
               <h1>Produtos</h1>
               <button onClick={adicionarCard}>Adicionar novo produto</button>
           </div>
+
+          <form action="" onSubmit={event => cadastrarProduto(event)}>
+            <div>
+                <label htmlFor="">Nome produto</label>
+                <input id='nomeProduto' type="text" value={nomeProduto} onChange={event => setNomeProduto(event.target.value) } />
+                {/* adionado value ={} para limpar os campos */}
+            </div>
+            <div>
+                <label htmlFor="">Preco</label>
+                <input id='nomeProduto' type="text" value={precoProduto} onChange={event => setPrecoProduto(event.target.value) } />
+            </div>
+            <div>
+                <label htmlFor="">Foto</label>
+                <input id='nomeProduto' type="text" value={fotoProduto} onChange={event => setFotoProduto(event.target.value) } />
+            </div>
+            <button type="submit">Cadastrar produto</button>
+          </form>
 
           <section className='products'>
               {
