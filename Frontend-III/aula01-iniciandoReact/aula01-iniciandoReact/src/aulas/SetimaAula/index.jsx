@@ -93,7 +93,7 @@ function adicionarCard(){
 
       <main className="setima-aula-component">
 
-          <div className="tittle-wrapper">
+          <div className="header">
               <h1>Produtos</h1>
               <button onClick={adicionarCard}>Adicionar novo produto</button>
           </div>
