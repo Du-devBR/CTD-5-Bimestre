@@ -1,5 +1,9 @@
 body {
-  background-color: #202020;
+  background-color: #101010;
+  margin-bottom: 84px;
+}
+
+body .newGames, body .earlyAccessGames {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,7 +16,15 @@ body {
           align-items: center;
 }
 
-body .container_newGames, body .container_earlyGames {
+body .newGames .title_section, body .earlyAccessGames .title_section {
+  color: rgba(255, 255, 255, 0.815);
+  font-size: 36px;
+  text-align: end;
+  font-weight: 700;
+  margin: 84px 0 24px 0;
+}
+
+body .newGames .container_newGames, body .newGames .container_earlyGames, body .earlyAccessGames .container_newGames, body .earlyAccessGames .container_earlyGames {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,16 +32,52 @@ body .container_newGames, body .container_earlyGames {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 12px;
-  background-color: #101010;
+  width: 1146px;
 }
 
-body .container_offers, body .container_cheapGames {
+body .halloweenOffers, body .cheapGames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .halloweenOffers .container_section_cheapGames, body .halloweenOffers .container_section_offers, body .cheapGames .container_section_cheapGames, body .cheapGames .container_section_offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .halloweenOffers .container_section_cheapGames .title_section, body .halloweenOffers .container_section_offers .title_section, body .cheapGames .container_section_cheapGames .title_section, body .cheapGames .container_section_offers .title_section {
+  color: rgba(255, 255, 255, 0.815);
+  font-size: 36px;
+  text-align: end;
+  font-weight: 700;
+  margin: 84px 0 24px 0;
+}
+
+body .halloweenOffers .container_section_cheapGames .container_offers, body .halloweenOffers .container_section_cheapGames .container_cheapGames, body .halloweenOffers .container_section_offers .container_offers, body .halloweenOffers .container_section_offers .container_cheapGames, body .cheapGames .container_section_cheapGames .container_offers, body .cheapGames .container_section_cheapGames .container_cheapGames, body .cheapGames .container_section_offers .container_offers, body .cheapGames .container_section_offers .container_cheapGames {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(400px, 2fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   gap: 24px;
   width: 1146px;
-  background-color: #101010;
 }

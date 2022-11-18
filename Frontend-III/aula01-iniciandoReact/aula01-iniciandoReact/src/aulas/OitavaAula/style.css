@@ -1,0 +1,90 @@
+.dark-theme {
+  background-color: blue;
+}
+
+.setima-aula-component {
+  width: 100%;
+}
+
+.setima-aula-component h1 {
+  color: #fff;
+}
+
+.setima-aula-component .formulario_erro .inputs .input_nameProduto input, .setima-aula-component .formulario_erro .inputs .input_precoProduto input, .setima-aula-component .formulario_erro .inputs .input_imagemProduto input {
+  border: solid 1px red;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.setima-aula-component form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  background: #161616;
+  border-radius: 12px;
+}
+
+.setima-aula-component form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+.setima-aula-component form .inputs .input_nameProduto, .setima-aula-component form .inputs .input_precoProduto, .setima-aula-component form .inputs .input_imagemProduto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+
+.setima-aula-component form .inputs .input_nameProduto label, .setima-aula-component form .inputs .input_precoProduto label, .setima-aula-component form .inputs .input_imagemProduto label {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.setima-aula-component form .inputs .input_nameProduto input, .setima-aula-component form .inputs .input_precoProduto input, .setima-aula-component form .inputs .input_imagemProduto input {
+  padding: 12px 16px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: solid 1px  #fff;
+  color: #fff;
+}
+
+.setima-aula-component form button {
+  font-size: 16px;
+  background-color: #69c269;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.setima-aula-component form button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  cursor: pointer;
+}
+
+.setima-aula-component .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 12px;
+  margin: 64px 0;
+}

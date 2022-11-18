@@ -8,6 +8,9 @@
           flex-direction: column;
   background-color: #151515;
   border-radius: 12px;
+  cursor: pointer;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .container_card img {
@@ -75,4 +78,9 @@
   font-weight: 700;
   color: #FF7A00;
   opacity: 80%;
+}
+
+.container_card:hover {
+  -webkit-box-shadow: 0px 0px 0px 1px #ff7b008c;
+          box-shadow: 0px 0px 0px 1px #ff7b008c;
 }
