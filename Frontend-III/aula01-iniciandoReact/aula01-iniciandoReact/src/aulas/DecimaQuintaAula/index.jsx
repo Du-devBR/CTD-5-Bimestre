@@ -5,7 +5,7 @@ import './style.sass'
 export function DecimaQuintaAula(){
 
   const [location, setLocation] = useState([])
-  const [cep, setCep] = useState('08751625')
+  const [cep, setCep] = useState('')
   const [validation, setValidation] = useState(false)
 
   function searchCep(event){
@@ -27,31 +27,14 @@ export function DecimaQuintaAula(){
   }
 
   function deleteAddress(currentLocation){
-    // const teste = location.indexOf(index)
 
     location.map((locations) =>{
       if(locations.cep === currentLocation.cep){
-        setLocation(
-          location.filter(
-            (currentLocation) => locations.cep !== currentLocation.cep
-          )
-        )
+        setLocation([...location.filter((currentLocation) => locations.cep !== currentLocation.cep)
+        ])
       }
     })
-
-
-    // if(teste >= 0){
-    //   location.splice(teste, 1)
-    //   console.log(location)
-    // }else{
-    //   console.log('erro')
-
-
-    // }
-
   }
-
-
 
   function removeValidation(){
     setValidation(false)
