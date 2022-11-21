@@ -7,7 +7,7 @@ export function DecimaQuintaAulaComponent(props){
       <p>{props.data.logradouro}, Bairro: {props.data.bairro}</p>
       <p>Cidade: {props.data.localidade}, {props.data.uf}</p>
       <button
-      onClick={props.onDeleteLocation}
+      onClick={() => props.onDeleteLocation(props.data)}
         >
         Deletar
       </button>

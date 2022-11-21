@@ -26,15 +26,28 @@ export function DecimaQuintaAula(){
     }
   }
 
-  function deleteAddress(currentLocation, index){
-    console.log(index)
+  function deleteAddress(currentLocation){
+    // const teste = location.indexOf(index)
+
+    location.map((locations) =>{
+      if(locations.cep === currentLocation.cep){
+        setLocation(
+          location.filter(
+            (currentLocation) => locations.cep !== currentLocation.cep
+          )
+        )
+      }
+    })
 
 
-    const teste = location.indexOf(index)
+    // if(teste >= 0){
+    //   location.splice(teste, 1)
+    //   console.log(location)
+    // }else{
+    //   console.log('erro')
 
-    location.splice(teste, 1)
 
-    console.log(location)
+    // }
 
   }
 
@@ -75,7 +88,7 @@ export function DecimaQuintaAula(){
             <DecimaQuintaAulaComponent
               key={index}
               data = {locations}
-              onDeleteLocation ={currentLocation => deleteAddress(currentLocation, index)}
+              onDeleteLocation = {currentLocation => deleteAddress(currentLocation)}
             />
           ))
         }
