@@ -16,11 +16,11 @@ export function DecimaQuintaAula(){
       .then(response => {
         response.json()
         .then(address => {
-          if(address.erro !== undefined){
-            setValidation(true)
-          }else {
-            setLocation([...location, address])
-          }
+            if(address.erro !== undefined){
+              setValidation(true)
+            }else {
+              setLocation([...location, address])
+            }
         })
       })
     }
@@ -34,6 +34,7 @@ export function DecimaQuintaAula(){
         ])
       }
     })
+
   }
 
   function removeValidation(){
