@@ -1,0 +1,38 @@
+.container-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  background: #723ae9;
+  padding: 16px;
+  border-radius: 12px;
+  max-width: 370px;
+}
+
+.container-card h1 {
+  color: #fafeff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.container-card p {
+  color: #fafeff;
+  font-size: 16px;
+}
+
+.container-card .btn-delete-card {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+  font-size: 16ox;
+  text-transform: uppercase;
+  background-color: #000712;
+  color: #fafeff;
+}

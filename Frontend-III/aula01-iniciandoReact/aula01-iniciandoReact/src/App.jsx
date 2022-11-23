@@ -21,12 +21,24 @@ export function App() {
       //utilizar para quando um componente utiliza outros componentes como filhas
       children: [
         {
+          path: 'quarta-aula',
+          element: <QuartaAula />
+        },
+        {
           path: 'decima-quinta-aula',
           element: <DecimaQuintaAula />
         },
         {
+          path: 'setima-aula',
+          element: <SetimaAula />
+        },
+        {
           path: 'oitava-aula',
           element: <OitavaAula />
+        },
+        {
+          path: 'quinta-aula',
+          element: <QuintaAula />
         }
       ]
     },

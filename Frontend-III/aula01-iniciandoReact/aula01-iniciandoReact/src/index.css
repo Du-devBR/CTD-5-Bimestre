@@ -4,9 +4,10 @@
   list-style: none;
   font-family: 'Roboto', sans-serif;
   outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  padding: 64px;
-  background: #212121;
+  background: #181818;
 }
