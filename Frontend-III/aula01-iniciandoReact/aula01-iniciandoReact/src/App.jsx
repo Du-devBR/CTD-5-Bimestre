@@ -5,10 +5,12 @@ import {createBrowserRouter, RouterProvider, Route,} from "react-router-dom";
 // import { SegundaAula } from "./aulas/SegundaAula"
 // import { TerceiraAula } from "./aulas/TerceiraAula/TerceiraAula"
 import { DecimaQuintaAula } from "./aulas/DecimaQuintaAula"
+import { DecimaSextaAula } from "./aulas/DecimaSextaAula";
 import { OitavaAula } from "./aulas/OitavaAula"
 import { QuartaAula } from "./aulas/QuartaAula"
 import { QuintaAula } from "./aulas/QuintaAula"
 import { SetimaAula } from "./aulas/SetimaAula"
+import { DecimaSextaAulaComponent } from "./components/DecimaSextaAulaComponent";
 import { MainAppLayout } from "./components/MainAppLayout";
 
 export function App() {
@@ -39,6 +41,10 @@ export function App() {
         {
           path: 'quinta-aula',
           element: <QuintaAula />
+        },
+        {
+          path: 'decima-sexta-aula/:id',
+          element: <DecimaSextaAula />,
         }
       ]
     },

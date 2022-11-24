@@ -26,6 +26,9 @@ export function MainAppLayout(){
             <li>
               <Link to="decima-quinta-aula">Decima quinta aula</Link>
             </li>
+            <li>
+              <Link to="decima-sexta-aula">Decima sexta aula</Link>
+            </li>
           </ul>
         </aside>
       <main className='main-layout-component-header'>

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { DecimaQuintaAulaComponent } from '../../components/DecimaQuintaAulaComponent'
 import './style.sass'
 
@@ -7,6 +8,7 @@ export function DecimaQuintaAula(){
   const [location, setLocation] = useState([])
   const [cep, setCep] = useState('')
   const [validation, setValidation] = useState(false)
+  const { id } = useParams()
 
   function searchCep(event){
     event.preventDefault()
