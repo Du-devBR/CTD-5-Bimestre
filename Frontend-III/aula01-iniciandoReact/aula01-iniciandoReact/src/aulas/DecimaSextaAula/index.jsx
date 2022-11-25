@@ -1,46 +1,74 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
-import { Outlet, useParams } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import { DecimaSextaAulaComponent } from '../../components/DecimaSextaAulaComponent'
+import { CommentComponent } from '../../components/DecimaSextaAulaComponent/CommentsComponent'
 import './style.sass'
 
 
 export function DecimaSextaAula(){
 
   const [post, setPost] = useState([])
-  const [idPost, setIdPost] = useState(1)
+  const [idComment, setIdComment] = useState()
   const [idParam, setIdParam] = useState()
-  const { id } = useParams()
+  const [comments, setComments] = useState([])
 
-  // console.log(id)
+  console.log(comments)
+
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${idPost}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts/`)
+    .then(response => {
+      response.json()
+      .then(address => {
+        setPost(address)
+      })
+    })
+  }, [])
+
+  useEffect(() => {
+    fetch(`https://jsonplaceholder.typicode.com/comments?postId=${idComment}`)
     .then(response => {
       response.json()
       .then(data => {
-        setPost(data)
+        setComments([data])
       })
     })
-  }, [idPost])
+  }, [idComment])
 
-  function getPostByUser(){
-    setIdPost(idPost + 1)
+
+
+  function showComments(current){
+
+    setIdComment(current.id)
   }
 
-
-
   return(
-    <>
-      <h1>Posts</h1>
-          <div className="container-card-post">
-          <h1>{post.userId}</h1>
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
 
+    <div>
+      <div className='container-post'>
+      {
+        post.map((posts, index) => (
+          <DecimaSextaAulaComponent
+            key = {index}
+            data = {posts}
+            onViewComments = {current => showComments(current)}
+          />
+        ))
 
-        </div>
-      <button onClick={getPostByUser}>Proximo</button>
-    </>
+      }
+
+    </div>
+    <div>
+      {
+        comments.map((comments) => {
+          <CommentComponent
+            key = {comments.id}
+            data = {comments}
+          />
+        })
+      }
+    </div>
+    </div>
   )
 }

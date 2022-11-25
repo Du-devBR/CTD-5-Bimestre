@@ -27,7 +27,7 @@ export function MainAppLayout(){
               <Link to="decima-quinta-aula">Decima quinta aula</Link>
             </li>
             <li>
-              <Link to="decima-sexta-aula">Decima sexta aula</Link>
+              <Link to="decima-sexta-aula/posts">Decima sexta aula</Link>
             </li>
           </ul>
         </aside>

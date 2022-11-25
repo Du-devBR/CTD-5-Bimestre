@@ -11,6 +11,7 @@ import { QuartaAula } from "./aulas/QuartaAula"
 import { QuintaAula } from "./aulas/QuintaAula"
 import { SetimaAula } from "./aulas/SetimaAula"
 import { DecimaSextaAulaComponent } from "./components/DecimaSextaAulaComponent";
+import { CommentComponent } from "./components/DecimaSextaAulaComponent/CommentsComponent";
 import { MainAppLayout } from "./components/MainAppLayout";
 
 export function App() {
@@ -43,8 +44,21 @@ export function App() {
           element: <QuintaAula />
         },
         {
-          path: 'decima-sexta-aula/:id',
+          path: 'decima-sexta-aula/',
           element: <DecimaSextaAula />,
+          children: [
+            {
+              path: 'posts',
+              element: <DecimaSextaAulaComponent />
+
+            },
+            {
+              path: 'posts',
+              element: <CommentComponent />
+
+            }
+          ]
+
         }
       ]
     },
