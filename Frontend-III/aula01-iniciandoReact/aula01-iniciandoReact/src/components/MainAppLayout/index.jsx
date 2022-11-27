@@ -27,12 +27,12 @@ export function MainAppLayout(){
               <Link to="decima-quinta-aula">Decima quinta aula</Link>
             </li>
             <li>
-              <Link to="decima-sexta-aula/posts">Decima sexta aula</Link>
+              <Link to="decima-sexta-aula/post">Decima sexta aula</Link>
             </li>
           </ul>
         </aside>
       <main className='main-layout-component-header'>
-        {/* outlet serve para criar as rotas dentro co campo */}
+        {/* outlet serve para criar as rotas dentro do campo */}
         <Outlet />
 
       </main>

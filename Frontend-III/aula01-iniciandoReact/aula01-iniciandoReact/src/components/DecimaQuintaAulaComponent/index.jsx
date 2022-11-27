@@ -1,3 +1,4 @@
+import { CommentComponent } from '../DecimaSextaAulaComponent/CommentsComponent'
 import './style.sass'
 
 export function DecimaQuintaAulaComponent(props){
@@ -12,6 +13,7 @@ export function DecimaQuintaAulaComponent(props){
         >
         Deletar
       </button>
+      <CommentComponent />
     </div>
   )
 }

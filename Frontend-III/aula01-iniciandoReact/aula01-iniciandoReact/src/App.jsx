@@ -44,18 +44,16 @@ export function App() {
           element: <QuintaAula />
         },
         {
-          path: 'decima-sexta-aula/',
+          path: 'decima-sexta-aula',
           element: <DecimaSextaAula />,
           children: [
             {
-              path: 'posts',
+              path: 'post',
               element: <DecimaSextaAulaComponent />
-
             },
             {
-              path: 'posts',
+              path: 'post/comment/:id',
               element: <CommentComponent />
-
             }
           ]
 
