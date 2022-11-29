@@ -1,10 +1,13 @@
 import { Link, Outlet } from 'react-router-dom'
+import { useTheme } from '../../hooks/UseTheme/UseTheme'
 import './style.sass'
 
 export function MainAppLayout(){
+
+  const { theme } = useTheme()
   return(
-    <div className='main-layout-component'>
-      <header>
+    <div className={`main-layout-component ${theme}`}>
+      <header className=''>
         <h1>frontend-III</h1>
       </header>
       <aside className='container-aside-classroom'>
@@ -28,6 +31,12 @@ export function MainAppLayout(){
             </li>
             <li>
               <Link to="decima-sexta-aula/post">Decima sexta aula</Link>
+            </li>
+            <li>
+              <Link to='decima-setima-aula'>Decima setima aula</Link>
+            </li>
+            <li>
+              <Link to='configuration'>Configurações</Link>
             </li>
           </ul>
         </aside>

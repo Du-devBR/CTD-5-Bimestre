@@ -13,6 +13,8 @@ import { SetimaAula } from "./aulas/SetimaAula"
 import { DecimaSextaAulaComponent } from "./components/DecimaSextaAulaComponent";
 import { CommentComponent } from "./components/DecimaSextaAulaComponent/CommentsComponent";
 import { MainAppLayout } from "./components/MainAppLayout";
+import { ThemeProvider } from "./hooks/UseTheme/UseTheme";
+import { Configuration } from "./pages/Configurations";
 
 export function App() {
 
@@ -56,15 +58,23 @@ export function App() {
               element: <CommentComponent />
             }
           ]
-
+        },
+        {
+          path: 'decima-setima-aula',
+          element: <DecimaSextaAula />
+        },
+        {
+          path: 'configuration',
+          element: <Configuration />
         }
+
       ]
     },
   ]);
 
   return (
-    <>
+    <ThemeProvider>
       <RouterProvider router={appRouter} />
-    </>
+    </ThemeProvider>
   )
 }
