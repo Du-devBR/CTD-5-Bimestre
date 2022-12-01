@@ -13,6 +13,7 @@ import { SetimaAula } from "./aulas/SetimaAula"
 import { DecimaSextaAulaComponent } from "./components/DecimaSextaAulaComponent";
 import { CommentComponent } from "./components/DecimaSextaAulaComponent/CommentsComponent";
 import { MainAppLayout } from "./components/MainAppLayout";
+import { LanguageProvider } from "./hooks/UseLanguage/useLanguage";
 import { ThemeProvider } from "./hooks/UseTheme/UseTheme";
 import { Configuration } from "./pages/Configurations";
 
@@ -73,8 +74,10 @@ export function App() {
   ]);
 
   return (
-    <ThemeProvider>
-      <RouterProvider router={appRouter} />
-    </ThemeProvider>
+    <LanguageProvider>
+      <ThemeProvider>
+        <RouterProvider router={appRouter} />
+      </ThemeProvider>
+    </LanguageProvider>
   )
 }
